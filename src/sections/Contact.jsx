@@ -50,8 +50,8 @@ const Contact = () => {
               </li>
             </ul>
 
-            <div className="mt-6">
-              <p className="font-semibold mb-3 text-gray-800">
+            <div className="mt-6 ">
+              <p className="font-semibold mb-3  text-gray-800">
                 Follow Me: <span className="text-primary">@Kellzdroid on,</span>
               </p>
               <div className="flex space-x-5 text-xl text-gray-600">
@@ -99,7 +99,7 @@ const Contact = () => {
 
             <button
               id="#"
-              className="bg-primary text-white bg-[#FFA500] px-16 py-3 rounded-sm font-medium hover:opacity-90 transition"
+              className="text-white bg-[#FFA500] px-16 py-3 rounded-sm font-medium hover:opacity-90 transition"
             >
               Send
             </button>

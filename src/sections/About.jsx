@@ -4,10 +4,14 @@ import { CiYoutube } from "react-icons/ci";
 
 const About = () => {
   return (
-    <section id="about" className="h-[620px] bg-white pt-32">
+    <section
+      id="about"
+      className="min-h-[620px] bg-white pt-32 pb-20 md:pb-32" // ✅ fixed: added bottom padding for spacing
+    >
       <motion.div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Left Title */}
-        <motion.div className="w-1/2 space-y-6">
+        <motion.div className="w-full md:w-1/2 space-y-6 mb-10 md:mb-0">
+          {/* ✅ added mb-10 for mobile spacing */}
           <motion.h2
             className="text-3xl font-bold text-gray-800 mb-6 flex items-center justify-center md:justify-center"
             initial={{ opacity: 0, y: 30 }}
@@ -22,9 +26,9 @@ const About = () => {
         </motion.div>
 
         {/* Right Content */}
-        <motion.div className="md:w-1/2">
+        <motion.div className="w-full md:w-1/2">
           <motion.p
-            className="text-gray-800 mb-16 leading-relaxed"
+            className="text-gray-800 mb-8 md:mb-16 leading-relaxed" // ✅ reduced mb for mobile
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
@@ -37,7 +41,7 @@ const About = () => {
           </motion.p>
 
           <motion.p
-            className="text-gray-800 mb-16 leading-relaxed"
+            className="text-gray-800 mb-8 md:mb-16 leading-relaxed" // ✅ reduced mb for mobile
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}

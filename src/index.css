@@ -28,9 +28,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* 3D flip + tilt utilities */
+/* 3D flip helpers */
 .perspective {
-  perspective: 1200px;
+  perspective: 1000px;
 }
 .preserve-3d {
   transform-style: preserve-3d;
