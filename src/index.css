@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheNightWatch";
+  src: url("/fonts/TheNightWatch.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Necra";
+  src: url("/fonts/NecraBold-nAGKV.otf") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  --font-necra: Necra, "sans-serif";
+  --font-poppins: Poppins, "sans-serif";
+  --font-night: TheNightWatch, "sans-serif";
+}
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3D flip + tilt utilities */
+.perspective {
+  perspective: 1200px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
